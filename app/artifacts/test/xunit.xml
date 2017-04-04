@@ -1,0 +1,5 @@
+<testsuite name="Mocha Tests" tests="3" failures="0" errors="0" skipped="0" timestamp="Thu, 15 Dec 2016 11:56:07 GMT" time="0.054">
+<testcase classname="Homepage" name="should display the homepage at / GET" time="0.033"/>
+<testcase classname="Homepage" name="should contain the word Sparta at / GET" time="0.008"/>
+<testcase classname="Fibonacci" name="should display the correct fibonacci value at /10 GET" time="0.006"/>
+</testsuite>
