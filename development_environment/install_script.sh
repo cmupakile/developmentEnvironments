@@ -29,7 +29,7 @@ sudo apt-get install nginx
 
 # change directory
 cd ~/
-sudo rm -r /etc/nginx/sites-available/default
+sudo rm /etc/nginx/sites-available/default
           # /home/ubuntu/environment --- this is a safer pathfinder
 sudo cp /home/ubuntu/developmentEnvironment/nginx.default /etc/nginx/sites-available/default
 
