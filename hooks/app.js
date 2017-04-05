@@ -15,6 +15,7 @@ handler.on('error', function (err) {
 })
 
 handler.on('push', function (event) {
+  console.log('there has been an update')
   exec("../deploy.sh").stdout.on('data', function(message){
     console.log(message);
   });
