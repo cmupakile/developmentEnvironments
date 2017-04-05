@@ -32,8 +32,8 @@ sudo apt-get install nginx
 sudo rm -r /etc/nginx/sites-available/default
 
 cd ~/
-
- sudo cp ~/devEnvironment/nginx.default /etc/nginx/sites-available
+          # /home/ubuntu/environment --- this is a safer pathfinder
+ sudo cp ~/home/ubuntu/environment/devEnvironment/nginx.default /etc/nginx/sites-available
 
  sudo mv /etc/nginx/sites-available/nginx.default /etc/nginx/sites-available/default
 
