@@ -40,4 +40,8 @@ sudo cp /home/ubuntu/developmentEnvironments/nginx.default /etc/nginx/sites-avai
 # restart the server
 sudo service nginx restart
 
+# redirect to bash
+echo 'eval `ssh-agent -s`' >> ~/.bashrc
+echo '`ssh-add ~/.ssh/gitHubKey`' >> ~/.bashrc 
+
 echo 'script working'
