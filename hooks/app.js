@@ -1,7 +1,7 @@
-var http = require('http')
-var createHandler = require('github-webhook-handler')
-var handler = createHandler({ path: '/webhook', secret: '123456' })
-var exec = require('child_process').exec
+var http = require('http');
+var createHandler = require('github-webhook-handler');
+var handler = createHandler({ path: '/webhook', secret: '123456' });
+var exec = require('child_process').exec;
 
 http.createServer(function (req, res) {
   handler(req, res, function (err) {
