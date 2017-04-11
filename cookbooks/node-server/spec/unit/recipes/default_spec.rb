@@ -42,15 +42,15 @@ describe 'node-server::default' do #decribes all of the tests that should be ran
     end
 
   it 'includes the `nodejs` recipe' do
-    expect(chef_run).to include_recipe('include_recipe::nodejs')
+    expect(chef_run).to include_recipe('nodejs::nodejs_from_package')
   end
 
    it 'includes the `pm2` recipe' do
-    expect(chef_run).to include_recipe('pm2')
+    expect(chef_run).to include_recipe('nodejs')
   end
 
    it 'includes the `npm` recipe' do
-    expect(chef_run).to include_recipe('npm')
+    expect(chef_run).to include_recipe('nodejs::npm')
   end
 
   it 'includes the `git` recipe' do
