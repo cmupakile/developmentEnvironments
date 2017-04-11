@@ -28,9 +28,9 @@ describe package('pm2') do
 	it { should be_installed.by('npm') }
 end
 
-describe package('npm') do
-	it { should be_installed }
-end
+# describe package('npm') do
+# 	it { should be_installed }
+# end
 
 describe command('node -v') do
 	its (:stdout) { should match /6\.10\.0/ }
