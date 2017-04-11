@@ -33,9 +33,11 @@ end
 # end
 
 describe command('node -v') do
-	its (:stdout) { should match /6\.10\.0/ }
+	its (:stdout) { should match /6\.9\.2/ }
 end
 
 describe command('git --version') do
-	its (:stdout) { should match /1\.9\.1/ }
+	its (:stdout) { should match /2\.7\.4/ }
 end
+
+
