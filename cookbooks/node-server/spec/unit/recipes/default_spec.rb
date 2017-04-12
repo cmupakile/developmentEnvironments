@@ -46,7 +46,7 @@ describe 'node-server::default' do #decribes all of the tests that should be ran
   end
 
    it 'includes the `pm2` recipe' do
-    expect(chef_run).to include_recipe('pm2')
+    expect(chef_run).to include_recipe('nodejs::nodejs_from_package')
   end
 
    it 'includes the `npm` recipe' do
