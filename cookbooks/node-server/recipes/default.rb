@@ -7,8 +7,8 @@
 package 'nginx'
 include_recipe 'nodejs'
 # include_recipe 'nodejs::npm'
-include_recipe "nodejs::nodejs_from_package"
-# include_recipe 'pm2::default'
+# include_recipe "nodejs::nodejs_from_package"
+nodejs_npm 'pm2'
 include_recipe 'git'
 
 # include_recipe 'apt'
