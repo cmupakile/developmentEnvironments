@@ -25,7 +25,7 @@ describe package('nodejs') do
 end
 
 describe package('pm2') do
-	it { should be_installed.by('npm') }
+	it { should be_installed.by('nodejs') }
 end
 
 # describe package('npm') do
