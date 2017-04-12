@@ -25,7 +25,7 @@ describe package('nodejs') do
 end
 
 describe package('pm2') do
-	it { should be_installed.by('nodejs::nodejs_from_package') }
+	it { should be_installed.by('nodejs') }
 end
 
 # describe package('npm') do
@@ -33,7 +33,7 @@ end
 # end
 
 describe command('node -v') do
-	its (:stdout) { should match /6\.9\.2/ }
+	its (:stdout) { should match /6\.10\.0/ }
 end
 
 describe command('git --version') do
